@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Orange: hsl(25, 97%, 53%);
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  /* Font Family */
+  --font-typ: "Overpass", serif;
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-typ);
+  font-weight: 400;
+  padding: 1.5rem;
+}
+
+/* Mobile-First */
+.starIcon {
+  background-color: hsla(217, 12%, 63%, 0.1);
+  padding: 0.9rem;
+  border-radius: 50%;
+}
+
+.thankYouIcon {
+  margin: 1rem;
+}
+
+.results {
+  background-color: hsla(217, 12%, 63%, 0.2);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: var(--Orange);
+  font-weight: 400;
+}
+
+.thankYou {
+  display: none;
+}
+
+.scoreCard,
+.thankYou {
+  background-color: var(--Dark-Blue);
+  border-radius: 1rem;
+  color: var(--White);
+  padding: 1.5rem;
+}
+
+.thankYou {
+  transition: opacity 0.3s ease-in;
+}
+
+.scoreCard {
+  transition: opacity 0.3s ease-out;
+}
+
+.hero,
+.thankYou h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.headerText,
+.thankYouText {
+  color: var(--Light-Grey);
+  margin: 1rem 0;
+}
+
+.thankYouText {
+  text-align: center;
+}
+
+.score {
+  background-color: hsla(217, 12%, 63%, 0.2);
+  padding: 0.9rem;
+  border-radius: 50%;
+  color: var(--White);
+  margin-bottom: 1.5rem;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+}
+
+.scoreBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score span {
+  opacity: 1;
+}
+
+.submitBtn {
+  background-color: var(--Orange);
+  color: var(--Very-Dark-Blue);
+  border-radius: 2rem;
+  width: 100%;
+  line-height: 3rem;
+  font-weight: 700;
+  border: none;
+}
+
+.score.selected {
+  background-color: var(--White);
+  color: var(--Very-Dark-Blue);
+}
+
+.score:hover,
+.submitBtn:hover {
+  background-color: var(--White);
+  color: var(--Very-Dark-Blue);
+}
+
+/* Thank you */
+.thankYou header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Desktop Ready */
+
+@media (min-width: 376px) {
+  .container {
+    max-width: 27rem;
+  }
+}
