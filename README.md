@@ -28,8 +28,8 @@ Your users should be able to:
 
 ### Screenshot
 
-[Score Card](./images/ScoreCard.JPG)
-[Thank You Card](./images/ThankYouCard.JPG)
+![](./images/ScoreCard.JPG)
+![](./images/ThankYouCard.JPG)
 
 ### Links
 
